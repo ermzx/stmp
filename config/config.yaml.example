@@ -1,0 +1,32 @@
+server:
+  port: 8800
+  mode: debug  # debug, release, test
+
+database:
+  path: ./data/smtp-mail.db
+
+upload:
+  max_size: 10485760  # 10MB
+  allowed_types:
+    - image/jpeg
+    - image/png
+    - image/gif
+    - application/pdf
+  upload_dir: ./data/uploads
+
+security:
+  jwt_secret: your-secret-key-change-in-production
+  jwt_expire_hours: 24
+  cors_enabled: true
+  cors_origins:
+    # 使用通配符 * 匹配所有来源（不推荐用于生产环境）
+    # - "*"
+    # 使用 localhost:* 匹配所有localhost端口（推荐用于开发环境）
+    - http://localhost:*
+    - http://127.0.0.1:*
+  bcrypt_cost: 10
+
+smtp:
+  default_host: smtp.example.com
+  default_port: 587
+  default_use_tls: true

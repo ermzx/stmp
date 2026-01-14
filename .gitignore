@@ -1,0 +1,83 @@
+# Go编译文件
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+backend/smtp-mail
+backend/smtp-mail.exe
+
+# Go工作区文件
+go.work
+go.work.sum
+
+# 构建输出
+build/
+
+# 依赖目录
+vendor/
+
+# Node.js依赖
+node_modules/
+frontend/node_modules/
+
+# 前端构建文件
+frontend/dist/
+frontend/.vite/
+
+# 数据库文件
+data/*.db
+data/*.db-shm
+data/*.db-wal
+*.db
+*.db-shm
+*.db-wal
+
+# 日志文件
+*.log
+backend.log
+frontend.log
+logs/
+
+# 配置文件（敏感信息）
+config/config.yaml
+
+# 操作系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDE配置文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# 临时文件
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# 测试覆盖率
+coverage/
+*.coverprofile

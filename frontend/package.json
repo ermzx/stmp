@@ -1,0 +1,24 @@
+{
+  "name": "smtp-mail-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "echo 'No linting configured'",
+    "type-check": "echo 'No type checking configured'"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.6.7",
+    "element-plus": "^2.6.1",
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "terser": "^5.44.1",
+    "vite": "^5.1.6"
+  }
+}
