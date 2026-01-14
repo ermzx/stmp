@@ -35,4 +35,4 @@ scripts\start.bat         # Windows
 
 ## 许可证
 
-FreeBSD
+BSD 3-Clause License
